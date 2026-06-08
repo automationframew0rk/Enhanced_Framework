@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+
+      <class name="com.salesforce.testcases.TC001_VerifyLogin"/>
+            <class name="com.salesforce.testcases.TC002_CreateIndividuals"/>
+            <class name="com.salesforce.testcases.TC003_EditIndividuals"/>
+            <class name="com.salesforce.testcases.TC004_DeleteIndividuals"/>
+            <class name="com.salesforce.testcases.TC005_CreateWorkType"/>
+            <class name="com.salesforce.testcases.TC006_EditWorkType"/>
+            <class name="com.salesforce.testcases.TC007_CreateContact"/>
+            <class name="com.salesforce.testcases.TC008_EditContact"/>
+            <class name="com.salesforce.testcases.TC009_CreateTasks"/>
+            <class name="com.salesforce.testcases.TC0010_EditTasks"/>
+            <class name="com.salesforce.testcases.TC0011_DeleteTasks"/>
+            
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

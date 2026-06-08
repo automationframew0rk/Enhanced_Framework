@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-20T15:18:22 IST" name="Suite" finished-at="2026-05-20T15:19:16 IST" duration-ms="53980">
+    <groups>
+    </groups>
+    <test started-at="2026-05-20T15:18:22 IST" name="Test" finished-at="2026-05-20T15:19:16 IST" duration-ms="53980">
+      <class name="com.salesforce.testcases.TC001_VerifyLogin">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.salesforce.testcases.TC001_VerifyLogin@797cf65c]" started-at="2026-05-20T15:18:22 IST" name="startReport" finished-at="2026-05-20T15:18:22 IST" duration-ms="475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="setValues()[pri:0, instance:com.salesforce.testcases.TC001_VerifyLogin@797cf65c]" started-at="2026-05-20T15:18:22 IST" name="setValues" finished-at="2026-05-20T15:18:22 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:com.salesforce.testcases.TC001_VerifyLogin@797cf65c]" started-at="2026-05-20T15:18:22 IST" name="startTestCase" finished-at="2026-05-20T15:18:22 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.salesforce.testcases.TC001_VerifyLogin@797cf65c]" started-at="2026-05-20T15:18:22 IST" name="preCondition" finished-at="2026-05-20T15:18:51 IST" duration-ms="29040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="runLogin()[pri:0, instance:com.salesforce.testcases.TC001_VerifyLogin@797cf65c]" started-at="2026-05-20T15:18:52 IST" name="runLogin" finished-at="2026-05-20T15:19:16 IST" duration-ms="24380" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[See Extent Report for more details.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: See Extent Report for more details.
+at com.framework.utils.Reporter.reportStep(Reporter.java:190)
+at com.framework.utils.Reporter.reportStep(Reporter.java:215)
+at com.framework.utils.Reporter.handleFailure(Reporter.java:152)
+at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:642)
+at com.salesforce.pages.LoginPage.enterPassword(LoginPage.java:15)
+at com.salesforce.testcases.TC001_VerifyLogin.runLogin(TC001_VerifyLogin.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runLogin -->
+        <test-method is-config="true" signature="endResult()[pri:0, instance:com.salesforce.testcases.TC001_VerifyLogin@797cf65c]" started-at="2026-05-20T15:19:16 IST" name="endResult" finished-at="2026-05-20T15:19:19 IST" duration-ms="2406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endResult -->
+      </class> <!-- com.salesforce.testcases.TC001_VerifyLogin -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
