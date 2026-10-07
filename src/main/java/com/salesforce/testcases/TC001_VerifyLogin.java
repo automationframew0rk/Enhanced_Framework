@@ -20,9 +20,10 @@ public class TC001_VerifyLogin extends ProjectSpecificMethods{
 	public void runLogin() {
 		new LoginPage()
 		.enterUsername()
-		.enterPassword();
-		//.clickLogin();
-	//	.verifyHomePage();
+		.clickContinue()
+		.enterPassword()
+		.clickLogin()
+		.verifyHomePage();
 
 	}
 

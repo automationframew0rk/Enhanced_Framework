@@ -6,7 +6,7 @@ import com.framework.testng.api.base.ProjectSpecificMethods;
 public class HomePage extends ProjectSpecificMethods {
 
 	public HomePage verifyHomePage() {
-		verifyDisplayed(locateElement(Locators.XPATH, "//span[text()='Home']"),"Homepage is loaded");
+		verifyDisplayed(locateElement(Locators.XPATH, "//div[@class='slds-icon-waffle']"),"Homepage is loaded");
 		return this;
 	}
 

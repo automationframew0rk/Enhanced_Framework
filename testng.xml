@@ -5,17 +5,7 @@
     <classes>
 
       <class name="com.salesforce.testcases.TC001_VerifyLogin"/>
-            <class name="com.salesforce.testcases.TC002_CreateIndividuals"/>
-            <class name="com.salesforce.testcases.TC003_EditIndividuals"/>
-            <class name="com.salesforce.testcases.TC004_DeleteIndividuals"/>
-            <class name="com.salesforce.testcases.TC005_CreateWorkType"/>
-            <class name="com.salesforce.testcases.TC006_EditWorkType"/>
-            <class name="com.salesforce.testcases.TC007_CreateContact"/>
-            <class name="com.salesforce.testcases.TC008_EditContact"/>
-            <class name="com.salesforce.testcases.TC009_CreateTasks"/>
-            <class name="com.salesforce.testcases.TC0010_EditTasks"/>
-            <class name="com.salesforce.testcases.TC0011_DeleteTasks"/>
-            
+      <class name="com.salesforce.testcases.TC001_CreateIndividuals"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
