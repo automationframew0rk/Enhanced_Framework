@@ -60,11 +60,11 @@ public abstract class Reporter extends DriverInstance {
 
 		htmlReporter.config().setTheme(Theme.STANDARD);
 
-		htmlReporter.config().setDocumentTitle("Salesforce");
+		htmlReporter.config().setDocumentTitle("Leaftaps");
 
 		htmlReporter.config().setEncoding("utf-8");
 
-		htmlReporter.config().setReportName("Salesforce");
+		htmlReporter.config().setReportName("Leaftaps");
 
 		htmlReporter.setAppendExisting(true);
 

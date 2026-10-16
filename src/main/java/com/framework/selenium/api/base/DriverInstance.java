@@ -29,7 +29,9 @@ public class DriverInstance  {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--start-maximized"); 
 			options.addArguments("--disable-notifications"); 
-			options.addArguments("--user-data-dir=C:\\Users\\DELL\\SleniuProfile");
+			if (headless) {
+				options.addArguments("--headless=new");
+			}
 			
 		//	options.addArguments("--incognito");
 			remoteWebdriver.set(new ChromeDriver(options));

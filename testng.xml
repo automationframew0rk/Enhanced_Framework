@@ -4,8 +4,11 @@
   <test thread-count="5" name="Test">
     <classes>
 
-      <class name="com.salesforce.testcases.TC001_VerifyLogin"/>
-      <class name="com.salesforce.testcases.TC001_CreateIndividuals"/>
+      <class name="com.leaftaps.testcases.TC001_VerifyLogin"/>
+      <class name="com.leaftaps.testcases.TC002_CreateLead"/>
+      <class name="com.leaftaps.testcases.TC003_CreateAccount"/>
+      <class name="com.leaftaps.testcases.TC004_CreateContact"/>
+      <class name="com.leaftaps.testcases.TC005_FindAccounts"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

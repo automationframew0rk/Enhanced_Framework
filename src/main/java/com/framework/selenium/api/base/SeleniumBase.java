@@ -300,7 +300,15 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 		try {
 			getWait().until(ExpectedConditions.visibilityOf(ele));
 			ele.clear();
-			ele.sendKeys("", "", data);
+			ele.sendKeys(data);
+			// Fall back when native typing does not update the input value.
+			if (!data.equals(ele.getDomProperty("value"))) {
+				getDriver().executeScript(
+					"arguments[0].value = arguments[1];"
+					+ "arguments[0].dispatchEvent(new Event('input', {bubbles: true}));"
+					+ "arguments[0].dispatchEvent(new Event('change', {bubbles: true}));", ele, data);
+			}
+			getWait().until(ExpectedConditions.domPropertyToBe(ele, "value", data));
 			reportStep(description, "pass");
 		} catch (Exception e) {
 			try {

@@ -1,11 +1,11 @@
 package com.framework.testng.api.base;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 
 import com.framework.selenium.api.base.SeleniumBase;
@@ -23,22 +23,26 @@ public class ProjectSpecificMethods extends SeleniumBase {
 		return DataLibrary.readExcelData(excelFileName);
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void preCondition() throws IOException {
 
-		FileInputStream config = new FileInputStream("./src/main/resources/config.properties");
 		prop = new Properties();
-		prop.load(config);
+		try (FileInputStream config = new FileInputStream("./src/main/resources/config.properties")) {
+			prop.load(config);
+		}
 
-		startApp("chrome", false, prop.getProperty("url"));
 		setNode();
+		startApp("chrome", Boolean.getBoolean("headless"), prop.getProperty("url"));
 		username = prop.getProperty("username");
 		password = prop.getProperty("password");
 
 	}
 
+	@AfterMethod(alwaysRun = true)
 	public void postCondition() {
-		close("Closed");
+		if (getDriver() != null) {
+			getDriver().quit();
+		}
 
 	}
 

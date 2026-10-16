@@ -5,6 +5,9 @@
 	<groupId>org.testleaf</groupId>
 	<artifactId>Framework</artifactId>
 	<version>1.0.0</version>
+	<properties>
+		<fileName>testng.xml</fileName>
+	</properties>
 	<dependencies>
 
 		<dependency>
